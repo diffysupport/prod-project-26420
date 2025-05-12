@@ -1,0 +1,40 @@
+basic:
+    name: 'Umami Platformsh + Github'
+    environments:
+        production: 'https://main-bvxea6i-m5p4uot2yv474.ca-1.platformsh.site/'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 640
+        - 1200
+        - 1280
+        - 1920
+    pages:
+        - /
+        - en
+        - es
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 10
+    scroll: false
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
