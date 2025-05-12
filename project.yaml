@@ -5,10 +5,8 @@ basic:
         staging: ''
         development: ''
     breakpoints:
-        - 640
-        - 1200
+        - 720
         - 1280
-        - 1920
     pages:
         - /
         - en
@@ -24,14 +22,26 @@ advanced:
     mask: ''
     remove: ''
     isolate: ''
-    delay: 10
+    delay: 0
     scroll: false
     headers:
         - { header: '', value: '' }
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10
